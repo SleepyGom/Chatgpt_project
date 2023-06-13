@@ -49,6 +49,15 @@
     display: flex !important;
 }
 
+.subbtn{
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-95%);
+    margin: 0;
+    background: rgb(91, 126, 229);
+    color: #fff;
+}
+
 
 /* 첫페이지 변화 */
 .after-logo{
@@ -198,6 +207,8 @@ div > textarea:focus{
 
 button{
     border:none;
+    width: 150px;
+    height:30px;
 }
 
 
