@@ -3,6 +3,7 @@ $startBtn.addEventListener("click" ,function(){
     //(positon :fixed), (top,left: 0), (로고 크기 2rem 조정) ,(margin top,left : 30px;),(line-height: 2.5rem)
     //(transform :transltate(0,0))
         document.querySelector(".logo").classList.add("after-logo")
+        document.querySelector(".logo").classList.add("wi-100")
 
         //(margin-left:12px 조정)
         document.querySelector(".logo h1 span").classList.add("after-span")
