@@ -36,9 +36,6 @@ $startBtn.addEventListener("click" ,function(){
             }
         });
 
-        console.log(genreData)
-        console.log(personalData)
-
         // 애니메이션
         document.querySelector(".fir-que").classList.remove("op1")
         setTimeout(()=>{
@@ -61,7 +58,6 @@ $startBtn.addEventListener("click" ,function(){
         
         queTitleCount += 1;
         queContentCount += 1;
-        console.log(queContentCount)
 
         },1000)
     })
@@ -70,5 +66,4 @@ $startBtn.addEventListener("click" ,function(){
     function addFeel(){
         const $textarea = document.querySelector("textarea")
         feelData.push($textarea.value);
-        console.log(feelData)
     }

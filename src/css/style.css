@@ -54,8 +54,24 @@ a{
     display: flex !important;
 }
 
+.justify-cneter{
+    justify-content: center;
+}
+
+.flex-direct{
+    flex-direction: column;
+}
+
+.align-center{
+    align-items: center;
+}
+
 .wi-100{
     width: 100px !important;
+}
+
+.color-static{
+    color: rgb(91, 126, 229);
 }
 
 .subbtn{
@@ -66,6 +82,19 @@ a{
     background: rgb(91, 126, 229);
     color: #fff;
 }
+
+.bg-white{
+    background: #fff;
+}
+
+.border-round{
+    border-radius: 30px;
+}
+
+.font-2{
+    font-size: 2rem;
+}
+
 
 
 /* 첫페이지 변화 */
@@ -137,6 +166,13 @@ a{
     flex-shrink: 0;
     margin-bottom: 2%;
 }
+
+.fir-que > form > div{
+    width:100%;
+    margin: 2% 0 2% 0;
+    text-align: center;
+}
+
 
 .fir-que > form > p{
     font-size: 1rem;
@@ -221,4 +257,16 @@ button{
     height:30px;
 }
 
+.answer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    opacity: 1;
+    transition: all .75s;
+    display: flex;
+    background: #fff;
+    border-radius: 30px;
+}
 

@@ -52,48 +52,36 @@ const sendQuestion = (question) => {
 
 };
 
-const printQuestion = async () => {
-    if (question) {
-        let li = document.createElement("li");
-        li.classList.add("question");
-        questionData.map((el) => {
-        li.innerText = el.content;
-        });
-        $form.innerHTML = ''
-        $form.appendChild(li);
-        questionData = [];
-        question = false;
-    }
-    };    
-
-    function isJSON(data) {
-        try {
-            JSON.parse(data);
-            return true;
-        } catch (error) {
-            return false;
-        }
-    }
-
-
-let answerJson ;
 // 화면에 답변 그려주는 함수
 const printAnswer = (answer) => {
-    console.log(answer)
-    if(isJSON(answer)){
-        answerJson = JSON.parse(answer);
-        console.log(answerJson)
-        let div = document.createElement("div");
-        $form.innerHTML = ''
-        div.classList.add(`answer`);
+    if(answer){
+        if(isJSON(answer)){
+            let answerData = JSON.parse(answer)
+            console.log(answer)
+            let h2 = document.createElement("h2");
+            let img = document.createElement("img");
+            let div = document.createElement("div")
 
-        
-        $form.appendChild(div);      
-        div.innerHTML += `<p class="bookinfo">${answerJson[0].answer}</p>
-        <br/>
-        <p>${answerJson[0].keyword}</p>`;
+            img.setAttribute("src",`${answerData.documents[0].thumbnail}`)
+            h2.innerText = `${answerData.documents[0].title}`
+
+            $form.innerHTML = '';
+
+            $form.classList.add("bg-white")
+            $form.classList.add("disfl")
+            $form.classList.add("justify-center")
+            $form.classList.add("color-static")
+            $form.classList.add("flex-direct")
+            $form.classList.add("border-round")
+            
+            h2.classList.add("font-2")
+
+            div.appendChild(img)
+            $form.appendChild(div);
+            $form.appendChild(h2)
+        }
+        else{
+            console.log("error")
+        }
     }
-    else{
-        console.log(answer)
-    }
-};
+}
