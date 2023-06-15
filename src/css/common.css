@@ -1,0 +1,96 @@
+/* 공용 */
+a{
+    text-decoration: none;
+    color:#fff
+}
+
+.btn{
+    width: 150px;
+    height: 50px;
+    background: #fff;
+    color: rgb(91, 126, 229);
+    margin: 3%  0 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    cursor: pointer;
+    position: absolute;
+    top:70%;
+    left:0;
+    transform:translate(0,-70%);
+    transition:all 1.5s;
+    box-shadow: 3px 3px 3px rgb(67, 92, 170);
+}
+
+.btn:active{
+    margin-left:5px;
+    margin-top:5px;
+    box-shadow: none;
+}
+
+.btn > p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.op0{
+    opacity: 0;
+}
+
+.op1{
+    opacity: 1 !important;
+}
+
+.disbl{
+    display: block !important;
+}
+
+.disno{
+    display: none !important;
+}
+
+.disfl{
+    display: flex !important;
+}
+
+.justify-cneter{
+    justify-content: center;
+}
+
+.flex-direct{
+    flex-direction: column;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.wi-100{
+    width: 100px !important;
+}
+
+.color-static{
+    color: rgb(91, 126, 229);
+}
+
+.subbtn{
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-95%);
+    margin: 0;
+    background: rgb(91, 126, 229);
+    color: #fff;
+}
+
+.bg-white{
+    background: #fff;
+}
+
+.border-round{
+    border-radius: 30px;
+}
+
+.font-2{
+    font-size: 2rem;
+}
