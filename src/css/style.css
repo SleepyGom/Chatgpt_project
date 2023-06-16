@@ -1,5 +1,5 @@
 /* 첫페이지 변화 */
-.after-logo{
+.after-logo {
     position:fixed;
     top:0 !important;
     left:0 !important;
@@ -10,7 +10,7 @@
     transform:translate(0,0) !important;
 }
 
-.after-span{
+.after-span {
     margin-left: 12px !important;
 }
 
@@ -26,7 +26,7 @@
     transition: all 1.5s;
 }
 
-.wrap > .logo{
+.wrap > .logo {
     width: 300px;
     position: absolute;
     top:50%;
@@ -39,11 +39,11 @@
     transition: all 1.5s;
 }
 
-.logo > a > h1 > span{
+.logo > a > h1 > span {
     margin-left: 45px;
 }
 
-.fir-que{
+.fir-que {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -54,12 +54,12 @@
     display: none;
 }
 
-.fir-que > form > fieldset{
+.fir-que > form > fieldset {
     display: flex;
     justify-content: space-around;
 }
 
-.fir-que > form > h2{
+.fir-que > form > h2 {
     font-size: 3rem;
     text-align: center;
     font-weight: bold;
@@ -75,7 +75,7 @@
 }
 
 
-.fir-que > form > p{
+.fir-que > form > p {
     font-size: 1rem;
     text-align: center;
     font-weight: bold;
@@ -86,30 +86,30 @@
 }
 
 
-.fir-que > form > fieldset > div{
+.fir-que > form > fieldset > div {
     display: flex;
 }
 
-.fir-que > form > fieldset > .textdata{
+.fir-que > form > fieldset > .textdata {
     display: flex;
     width:100%;
     justify-content: center;
 }
 
-.fir-que > form > fieldset > div > label{
+.fir-que > form > fieldset > div > label {
     margin-right: 5%;
 }
 
-.fir-que > form > fieldset > div > label:last-child{
+.fir-que > form > fieldset > div > label:last-child {
     margin-right: 0;
 }
 
-.fir-que > form > fieldset > div > label > p{
+.fir-que > form > fieldset > div > label > p {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.fir-que > form > fieldset > div > input[type = "radio"]{
+.fir-que > form > fieldset > div > input[type = "radio"] {
     vertical-align: baseline;
     appearance: none;
     border: 3px solid #fff;
@@ -120,12 +120,12 @@
     background: #fff;  
 }
 
-.fir-que > form > fieldset > div > input[type="radio"]:checked{
+.fir-que > form > fieldset > div > input[type="radio"]:checked {
     background : rgb(91, 126, 229);
 }
 
 
-.next{
+.next {
     top: 85%;
     left: 80%;
     transform: translate(-85%,-80%);
@@ -133,32 +133,32 @@
     opacity: 0;
 }
 
-div > textarea{
+div > textarea {
     width: 80%;
     height: 300px;
     resize: none;
     border-radius: 30px;
     border: none;
     font-size: 16px;
-    padding: 2% 0 0 2%;
+    padding: 3% 0 0 3%;
     font-weight: bold;
 }
 
-div > textarea::placeholder{
+div > textarea::placeholder {
     color: #a6a5a5;
 }
 
-div > textarea:focus{
+div > textarea:focus {
     outline: 3px solid rgb(67, 92, 170);
 }
 
-button{
+button {
     border:none;
     width: 150px;
     height:30px;
 }
 
-.answer{
+.answer {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -171,3 +171,10 @@ button{
     border-radius: 30px;
 }
 
+.load {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+}

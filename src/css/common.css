@@ -1,10 +1,10 @@
 /* 공용 */
-a{
+a {
     text-decoration: none;
     color:#fff
 }
 
-.btn{
+.btn {
     width: 150px;
     height: 50px;
     background: #fff;
@@ -23,58 +23,58 @@ a{
     box-shadow: 3px 3px 3px rgb(67, 92, 170);
 }
 
-.btn:active{
+.btn:active {
     margin-left:5px;
     margin-top:5px;
     box-shadow: none;
 }
 
-.btn > p{
+.btn > p {
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.op0{
+.op0 {
     opacity: 0;
 }
 
-.op1{
+.op1 {
     opacity: 1 !important;
 }
 
-.disbl{
+.disbl {
     display: block !important;
 }
 
-.disno{
+.disno {
     display: none !important;
 }
 
-.disfl{
+.disfl {
     display: flex !important;
 }
 
-.justify-cneter{
+.justify-cneter {
     justify-content: center;
 }
 
-.flex-direct{
+.flex-direct {
     flex-direction: column;
 }
 
-.align-center{
+.align-center {
     align-items: center;
 }
 
-.wi-100{
+.wi-100 {
     width: 100px !important;
 }
 
-.color-static{
+.color-static {
     color: rgb(91, 126, 229);
 }
 
-.subbtn{
+.subbtn {
     top: 95%;
     left: 50%;
     transform: translate(-50%,-95%);
@@ -83,14 +83,14 @@ a{
     color: #fff;
 }
 
-.bg-white{
+.bg-white {
     background: #fff;
 }
 
-.border-round{
+.border-round {
     border-radius: 30px;
 }
 
-.font-2{
+.font-2 {
     font-size: 2rem;
 }

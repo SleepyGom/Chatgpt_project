@@ -32,9 +32,10 @@ const bookPost = async (answer) =>{
 $form.addEventListener("submit", (e) =>{
     e.preventDefault();
     addFeel();
+    Loading();
     addQuestion();
     sendQuestion(question);
     apiPost();
-    bookPost()
+    bookPost();
     printAnswer();
 })

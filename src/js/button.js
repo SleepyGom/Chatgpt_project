@@ -65,5 +65,10 @@ $startBtn.addEventListener("click" ,function(){
     // submit 시에 feelData로 textarea value값 저장
     function addFeel(){
         const $textarea = document.querySelector("textarea")
-        feelData.push($textarea.value);
+        if($textarea.value === null){
+            feelData.push('')
+        }
+        else{
+            feelData.push($textarea.value);
+        }
     }

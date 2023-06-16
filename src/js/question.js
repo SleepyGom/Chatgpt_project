@@ -56,6 +56,7 @@ const sendQuestion = (question) => {
 const printAnswer = (answer) => {
     if(answer){
         if(isJSON(answer)){
+            Loading(data)
             let answerData = JSON.parse(answer)
             console.log(answer)
             let h2 = document.createElement("h2");
