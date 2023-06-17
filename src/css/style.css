@@ -177,4 +177,10 @@ button {
     left: 50%;
     transform: translate(-50%,-50%);
     opacity: 1;
+} 
+
+.loadingM {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 30px;
 }
