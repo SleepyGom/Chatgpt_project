@@ -1,3 +1,5 @@
+const url = `https://estsoft-openai-api.jejucodingcamp.workers.dev/`;
+
 // api 요청보내는 함수
 let answerJson;
 const apiPost = async () => {
@@ -16,6 +18,6 @@ const apiPost = async () => {
     console.log(answerJson)
     })
     .catch((err) => {
-    console.log(err);
+        console.log("it's error rebooting")
     });
 };

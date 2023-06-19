@@ -1,6 +1,7 @@
 let bookposting ;
 
 const bookPost = async (answer) =>{
+    let count = 0;
     if(answer){
         let keyword = answer.length > 0 ? answer[0].keyword : answer.keyword
         const url = `https://dapi.kakao.com/v3/search/book?target=title&query=${keyword}`
@@ -16,14 +17,10 @@ const bookPost = async (answer) =>{
         .then((res)=>{
             console.log(res)
             bookposting = JSON.stringify(res)
-            printAnswer(JSON.stringify(res))
-            // $form.innerHTML =  `
-            // <div><img src ="${res.documents[0].thumbnail}"/></div>
-            // <div>${res.documents[0].title}</div>
-            // `
+            printAnswer(bookposting)
         })
         .catch((err) => {
-            console.log(err)
+            console.log("bookpost error")
         })
     }
 };

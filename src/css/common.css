@@ -54,7 +54,7 @@ a {
     display: flex !important;
 }
 
-.justify-cneter {
+.justify-center {
     justify-content: center;
 }
 
@@ -93,4 +93,11 @@ a {
 
 .font-2 {
     font-size: 2rem !important;
+    color: #000 !important;
 }
+
+.font-1 {
+    font-size: 1rem !important;
+    color: #333 !important;
+}
+

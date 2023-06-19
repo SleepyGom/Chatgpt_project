@@ -1,10 +1,9 @@
-let url = `https://estsoft-openai-api.jejucodingcamp.workers.dev/`;
 
 
 let question;
 
 function addQuestion(){
-    question = `${genreData.join(',')} ${genreData.join(',') === undefined ? '' : '장르를 좋아하는'} ${personalData[0]}${personalData[1] === "" ? '':' '}${personalData[1]}${personalData[1] === "" ?'가':'이'} 읽기 좋은 책을 json형태로 추천해줘`
+    question = `${genreData.join(',')} ${genreData.length === 0 ? '' : '장르를 좋아하는'} ${personalData[0]}${personalData[1] === "" ? '':' '}${personalData[1]}${personalData[1] === "" ?'가':'이'} 읽기 좋은 책을 json형태로 추천해줘`
 }
 
 
@@ -13,6 +12,9 @@ let data = [
     {
         role: "system",
         content: "assistant는 유능한 책 마스터이다.",
+    },{
+        role: "system",
+        content: "assistant는 항상 책 한 권만 추천한다.",
     },{
         role: "user",
         content : `스릴러 장르를 좋아하는 20대 남성의 맞는 책을 추천해주고, json 형태로 답변을 줘 내가 원하는 형태는 [{
@@ -62,9 +64,13 @@ const printAnswer = (answer) => {
             let h2 = document.createElement("h2");
             let img = document.createElement("img");
             let div = document.createElement("div")
+            let p = document.createElement("p")
+            
 
             img.setAttribute("src",`${answerData.documents[0].thumbnail}`)
             h2.innerText = `${answerData.documents[0].title}`
+            p.innerText = `${answerJson ? answerJson.answer ?
+                answerJson.answer : answerJson[0].answer : ''}`
 
             $form.innerHTML = '';
 
@@ -76,10 +82,19 @@ const printAnswer = (answer) => {
             $form.classList.add("border-round")
             
             h2.classList.add("font-2")
+            p.classList.add("font-1")
 
             div.appendChild(img)
             $form.appendChild(div);
             $form.appendChild(h2)
+            $form.appendChild(p)
+            createContentBtn();
+            
+            $content.addEventListener("click",function (){
+                $form.appendChild(p)
+            
+                p += `${answerData.document[0].content}`
+            })
         }
         else{
             console.log("error")
